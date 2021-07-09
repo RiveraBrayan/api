@@ -10,7 +10,7 @@ app.use(express.json());
 //app.use(bodyParser.json())
 app.use(cors());
 
-app.all('*', function(req,res,next){
+app.all('*', function(req, res, next){
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'PUT,GET,POST,DELETE,OPTIONS');
     res.header('Access-Control-Allow-Headers',  'Content-Type');
@@ -31,15 +31,15 @@ app.post('/api/post', (req, res) => {
     })
 });
 
-
+//suma
 app.post('/api/sum', (req, res) => {
     let body = req.body;
     res.send({
-        "thing":"Un T-rex es poderoso pero la familia lo es mas"
+        "thing":"suma"
     })
 });
 
-
+//exam
 
 //put
 app.put('/api/put', (req, res) => {
